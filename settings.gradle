@@ -1,0 +1,10 @@
+rootProject.name = 'gradletask'
+include 'view'
+include 'api'
+include 'module'
+include 'module:service'
+findProject(':module:service')?.name = 'service'
+include 'module:persistence'
+findProject(':module:persistence')?.name = 'persistence'
+include 'util'
+
